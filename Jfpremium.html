@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Premium & Packages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        .jfpremium, .packages {
+            padding: 50px 0;
+        }
+        .jfpremium h1, .packages h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .jfpremium p, .packages p {
+            font-size: 18px;
+            color: #f8f9fa;
+        }
+        .premium-benefits ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .premium-benefits ul li {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .premium-benefits ul li i {
+            color: #ffc107;
+            margin-right: 10px;
+        }
+        .premium-plan, .package-plan {
+            background-color: #00adbf;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .premium-plan h2, .package-plan h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .premium-plan p, .package-plan p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-warning {
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+        .package-plan {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar from the index.html -->
+        <header class="header">
+            <div class="logo">
+              <a href="#" style="text-decoration: none; font-size: 30px; font-weight: 50px;"><i class="fa-solid fa-user-tie fa-bounce fa-2xl" style="color: #1b22de;"></i>JobFinder.com</a>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+        
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="recmd.html">Recommended Jobs</a></li>
+                        <li><a class="dropdown-item" href="savedJ.html">Saved Jobs</a></li>
+                        <li><a class="dropdown-item" href="appied.html">Appied Jobs</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                       
+                        <li><a class="dropdown-item" href="Jfpremium.html">JFinder Premium</a></li>
+                        <li><a class="dropdown-item" href="postjob.html">Post Job</a></li>
+                        
+        
+                      </ul>
+                
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bell"></i></a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="appied.html">Application Status</a></li>
+                        <li><a class="dropdown-item" href="#">Pending Actions</a></li>
+                        <li><a class="dropdown-item" href="#">Job Invites</a></li>
+                        
+                      </ul>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light"><a class="nav-link" href="signup.html">Join now</a></button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="margin-right: 10px;border-radius: 10px;color: #fff;"><a class="nav-link" href="login.html">Sign in</a></button>
+                      </li>
+                  
+        
+                  </ul>
+        
+                   
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
+        
+        
+        <main class="main">
+            <section class="jfpremium">
+                <div class="container">
+                    <h1 style="text-align: center; color: black;">JF Premium Membership</h1>
+                    <p style="text-align: center;color: black;">Unlock exclusive benefits with our JF Premium Membership and elevate your job search experience.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="premium-benefits">
+                                <h2>Premium Benefits</h2>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i> <strong>Increased Visibility:</strong> Your profile gets prioritized in job search results, making you more noticeable to recruiters.</li>
+                                    <li><i class="fa-solid fa-star"></i> <strong>Enhanced Chances:</strong> Increase your chances of getting called for interviews with our premium services.</li>
+                                    <li><i class="fa-solid fa-star"></i> <strong>Mock Interviews:</strong> Practice mock interviews with industry experts to improve your performance.</li>
+                                    <li><i class="fa-solid fa-star"></i> <strong>Standout Resume:</strong> Receive a visually appealing resume makeover to impress potential employers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="premium-plan">
+                                <h2>Monthly Subscription</h2>
+                                <p>Get all these benefits for just <strong>₹999</strong> per month!</p>
+                                <a href="signup.html" class="btn btn-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+           
+            <section class="packages">
+                <div class="container">
+                    <h1 style="text-align: center; color: black">Exclusive Packages</h1>
+                    <p style="text-align: center; color: black">Choose from our specially designed packages to give your job search an extra edge.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="package-plan">
+                                <h2>Resume Writing Package</h2>
+                                <p>Get a professionally written resume for just <strong>₹899</strong>.</p>
+                                <p>This package includes a complete overhaul of your resume with industry-specific formatting and content improvement to increase your chances of getting noticed.</p>
+                                <a href="signup.html" class="btn btn-warning">Buy Now</a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <div class="package-plan">
+                                <h2>Interview Preparation Package</h2>
+                                <p>Master your interviews with our expert coaching for just <strong>₹1499</strong>.</p>
+                                <p>Includes one-on-one mock interviews, feedback sessions, and personalized tips to help you excel in real interviews.</p>
+                                <a href="signup.html" class="btn btn-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

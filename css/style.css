@@ -1,0 +1,431 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4; 
+  color: #333; 
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #FFFFFF; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  /* background-color: #FFFFFF; */
+  background-color: lightblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.header__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__nav li {
+  margin-left: 20px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #007BFF; 
+  font-weight: bold;
+}
+
+/* Welcome Section */
+.welcome {
+  width: 100%;
+  height: 100px;
+  background-color: #00ACC1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.welcome h2 {
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* Main */
+.main {
+  padding: 20px 0;
+}
+
+.main1 {
+  background-color: #007BFF; 
+  color: #FFFFFF; 
+  padding: 40px;
+  text-align: center;
+  background-image: url(../images/cover2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main1_content {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.main1 h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.main1 p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.btn-success {
+  color: #FFFFFF;
+  margin-left: 10px;
+  background-color: #28A745; 
+}
+
+/* Search */
+.div_search {
+  margin-top: 20px;
+  color: #333; 
+  background-color: #E0F7FA; 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.buttonclass {
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: #00ACC1; 
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.buttonclass h3 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.buttonclass label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.buttonclass input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #FFFFFF;
+}
+
+/* Hidden checkbox */
+.toggle-checkbox {
+  display: none;
+}
+
+
+.toggle-label {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  color: #FFFFFF; 
+}
+
+
+.toggle-checkbox:checked + .buttonclass {
+  max-height: 1000px;
+}
+
+
+.toggle-checkbox:checked + .buttonclass .toggle-label i {
+  transform: rotate(180deg);
+}
+
+.search h1 {
+  color: #00adbf;
+}
+
+/* Art Section */
+.art {
+  padding: 20px 0;
+  background-color: #F4F4F4; 
+}
+
+.art .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Adjustments */
+.card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* About Section */
+.about {
+  padding: 20px 0;
+}
+
+.about h2 {
+  text-align: center;
+  color: #007BFF;
+}
+
+.about p {
+  text-align: center;
+  color: #333; 
+}
+
+/* Footer */
+.footer {
+  background-color: #343A40; 
+  color: #FFFFFF;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-item {
+  flex: 1;
+  margin: 10px;
+  min-width: 150px;
+}
+
+.footer-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-item .social i {
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  padding: 10px 0;
+}
+
+.social a {
+  margin: 0 15px;
+  color: #007BFF; 
+}
+
+/* Animation Styles */
+.animate {
+  background-color: #F4F4F4; 
+  color: grey;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.business_class {
+  float: left;
+}
+
+.ani-container {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+  margin-right: 300px;
+}
+
+.ani-content {
+  animation: ourbus 10s linear infinite;
+}
+
+.other_bus {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+@keyframes ourbus {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Media Queries */
+
+
+@media (min-width: 992px) {
+  .header {
+    padding: 30px 0;
+  }
+  .main1 {
+    padding: 60px;
+  }
+  .main1_content {
+    height: 600px;
+  }
+  .job-card {
+    width: 300px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header {
+    padding: 15px 0;
+  }
+  .main1 {
+    padding: 30px;
+  }
+  .main1_content {
+    height: 300px;
+  }
+  .job-card {
+    width: 200px;
+  }
+}
+
+/* Profile CSS */
+.profile {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.profile-card, .applications-card {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+
+.profile-card .card-img-top {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 100px;
+}
+
+
+.btn-primary {
+  border-radius: 4px;
+  background-color: #007BFF; 
+  color: #FFFFFF;
+}
+
+.btn-link {
+  color: #007BFF; 
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.list-group-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Other Pages Footer and Container Fluid */
+
+
+.container-fluid1 {
+  background-image: linear-gradient(to right, #007BFF, #00ACC1); 
+  border-radius: 10px;
+  
+  height: 280px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid2 {
+  background-image: linear-gradient(to right, #007BFF, #00ACC1); 
+  border-radius: 10px;
+  
+  height: 256px;
+  font-family: 'Roboto', sans-serif;
+}

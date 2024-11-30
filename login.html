@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page(OMKAR)</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin: 0;
+            
+        }
+        .container {
+            background-color: rgb(212, 243, 241);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            box-shadow: 4px 4px 8px grey;
+        }
+        
+        .container label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: black;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .container button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: blue;
+            color: #fff;
+            font-size: 18px;
+        }
+        .container button:hover {
+            background-color: rgb(43, 119, 126);
+        }
+        p{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <form>
+            <h1>Log In</h1>
+            <label for="username">Enter Username:</label>
+            <input type="email" name="username" placeholder="Enter email ID" required>
+
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" placeholder="Password Here" required>
+
+            <p><a href="#">Forgot Password?</a></p>
+            
+            <button type="submit"><a href="index.html" style="text-decoration: none; color: #fff;">Login</a></button>
+
+            <p>By clicking Continue, you agree to JobFinder's <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.</p><br>
+
+            New To JobFinder?   <strong><a href="signup.html">Sign Up</a></strong>
+        </form>
+    </div>
+    
+</body>
+</html>

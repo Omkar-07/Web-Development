@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <div class="logo">
+              <a href="#" style="text-decoration: none; font-size: 30px; font-weight: 50px;"><i class="fa-solid fa-user-tie fa-bounce fa-2xl" style="color: #1b22de;"></i>JobFinder.com</a>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+        
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="recmd.html">Recommended Jobs</a></li>
+                        <li><a class="dropdown-item" href="savedJ.html">Saved Jobs</a></li>
+                        <li><a class="dropdown-item" href="appied.html">Appied Jobs</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                       
+                        <li><a class="dropdown-item" href="Jfpremium.html">JFinder Premium</a></li>
+                        <li><a class="dropdown-item" href="postjob.html">Post Job</a></li>
+                        
+        
+                      </ul>
+                
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-bell"></i></a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="appied.html">Application Status</a></li>
+                        <li><a class="dropdown-item" href="#">Pending Actions</a></li>
+                        <li><a class="dropdown-item" href="#">Job Invites</a></li>
+                        
+                      </ul>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light"><a class="nav-link" href="signup.html">Join now</a></button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="margin-right: 10px;border-radius: 10px;color: #fff;"><a class="nav-link" href="login.html">Sign in</a></button>
+                      </li>
+                  
+        
+                  </ul>
+        
+                   
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
+        
+
+        
+        <main class="main">
+            <section class="post-job">
+                <div class="container">
+                    <h1 style="text-align: center; margin-bottom: 30px;">Post a Job</h1>
+                    <form action="submit-job.html" method="POST" class="job-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="jobTitle" class="form-label">Job Title</label>
+                                    <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Enter job title" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="companyName" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Enter company name" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="location" name="location" placeholder="Enter job location" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="salary" class="form-label">Salary (₹ per annum)</label>
+                                    <input type="number" class="form-control" id="salary" name="salary" placeholder="Enter salary" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="jobDescription" class="form-label">Job Description</label>
+                            <textarea class="form-control" id="jobDescription" name="jobDescription" rows="5" placeholder="Enter job description" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="skills" class="form-label">Required Skills</label>
+                            <input type="text" class="form-control" id="skills" name="skills" placeholder="Enter required skills" required>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Post Job</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
+    
+      <div class="container">
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-item googlemap">
+                
+                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.02503879427263!2d72.97514572966894!3d19.18645144849792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b920aa9481a1%3A0xa48d60147b709fed!2sThane%20Railway%20Station%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1723470757508!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+              </div>
+              <div class="footer-item officeinfo">
+                <strong>Corporate Office</strong>
+                <p>
+                  Job Bharat<br>XYZ<br>
+                  Thane-400080<br>
+                  India<br>
+                  Phone: +91-9172553370,<br>
+                  E-mail: <a href="mailto:jobfinder@gmail.com">jobfinder@gmail.com</a>
+                </p>
+              </div>
+              <div class="footer-item">
+                <strong>Registered Office</strong>
+                <p>
+                  Job Bharat<br>XYZ<br>
+                  Thane-400080<br>
+                  Phone: +91-9172553370,<br>
+                  India.<br>
+                </p>
+              </div>
+              <div class="footer-item">
+                <strong>Other Office</strong>
+                <p>
+                  Job Bharat<br>
+                  ABCD,<br>
+                  Mumbai-400001<br>
+                  India. <br>
+                </p>
+              </div>
+              <div class="footer-item social">
+                <span>Follow us on</span><br><br>
+                <p>
+                  <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-beat-fade fa-xl" style="color: #74C0FC;"></i></a>
+                  <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter fa-beat-fade fa-xl" style="color: #0c0d0d;"></i></a>
+                  <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #e133b2;"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              Working Hours 10 AM to 6 PM, Monday to Saturday, Except Holidays
+            </div>
+            <div class="footer-bottom">
+              All rights reserved © 2000 Info Job Bharat Ltd.
+            </div>
+          </footer>
+      </div>
+
+      <div class="container">
+        <div class="animate">
+            <div class="business_class"><h2>Our businesses</h2></div>
+            <div class="ani-container">
+              <div class="ani-content">
+                <div class="other_bus"><a href="#"><img src="images/JFlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+                <div class="other_bus"><a href="#"><img src="images/CvWlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+                <div class="other_bus"><a href="#"><img src="images/ITLogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+                <div class="other_bus"><a href="#"><img src="images/a-zlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+                <div class="other_bus"><a href="#"><img src="images/JFmag.png" alt="" style="height: 50px;width: 50px;"></a></div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+</body>
+</html>

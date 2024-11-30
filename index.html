@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Job Search Portal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <div class="container">
+  <header class="header">
+    <div class="logo">
+      <a href="#" style="text-decoration: none; font-size: 30px; font-weight: 50px;"><i class="fa-solid fa-user-tie fa-bounce fa-2xl" style="color: #1b22de;"></i>JobFinder.com</a>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="recmd.html">Recommended Jobs</a></li>
+                <li><a class="dropdown-item" href="savedJ.html">Saved Jobs</a></li>
+                <li><a class="dropdown-item" href="appied.html">Appied Jobs</a></li>
+                <li><hr class="dropdown-divider"></li>
+               
+                <li><a class="dropdown-item" href="Jfpremium.html">JFinder Premium</a></li>
+                <li><a class="dropdown-item" href="postjob.html">Post Job</a></li>
+                
+
+              </ul>
+        
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-bell"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="appied.html">Application Status</a></li>
+                <li><a class="dropdown-item" href="#">Pending Actions</a></li>
+                <li><a class="dropdown-item" href="#">Job Invites</a></li>
+                
+              </ul>
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-light"><a class="nav-link" href="signup.html">Join now</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;border-radius: 10px;color: #fff;"><a class="nav-link" href="login.html">Sign in</a></button>
+              </li>
+          
+
+          </ul>
+
+           
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <!-- Navbar End -->
+
+   <div class="welcome">
+    <h2>Connecting Developers to Dream Jobs</h2>
+</div>
+             <!-- main starts -->
+  <main class="main">
+    
+    <section class="main1">
+      
+        <div class="main1_content">
+        
+          <h1>Find Your Dream Job</h1>
+          
+          <p>Browse thousands of job openings from top companies.</p>
+          <a href="#"><button class="btn btn-primary">Search Jobs</button></a>
+          <a href="postjob.html"><button class="btn btn-success">Post Job</button></a>
+        </div>
+      
+    </section>
+
+
+      
+    
+    <section class="search">
+      <div class="div_search">
+          <h1 class="text-center py-3">Search Jobs</h1>
+          <form>
+              <div class="row">
+                  <!-- Cities -->
+                  <div class="col-md-3">
+                      <!-- Hidden checkbox to control expansion -->
+                      <input type="checkbox" id="toggle-cities" class="toggle-checkbox">
+                      <div class="buttonclass">
+                          <h3>Cities</h3>
+                          <label>
+                              <input type="checkbox" value="mumbai"> Mumbai
+                          </label>
+                          <label>
+                              <input type="checkbox" value="pune"> Pune
+                          </label>
+                          <label>
+                              <input type="checkbox" value="bangalore"> Bangalore
+                          </label>
+                          <label>
+                              <input type="checkbox" value="chennai"> Chennai
+                          </label>
+                          <label>
+                              <input type="checkbox" value="delhi"> Delhi
+                          </label>
+                          <label>
+                              <input type="checkbox" value="kolkata"> Kolkata
+                          </label>
+                          <!-- Label for the toggle button -->
+                          <label for="toggle-cities" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                      </div>
+                  </div>
+
+                  <!-- Skills -->
+                  <div class="col-md-3">
+                      <input type="checkbox" id="toggle-skills" class="toggle-checkbox">
+                      <div class="buttonclass">
+                          <h3>Skills</h3>
+                          <label>
+                              <input type="checkbox" value="html"> HTML5/CSS3
+                          </label>
+                          <label>
+                              <input type="checkbox" value="java"> Java
+                          </label>
+                          <label>
+                              <input type="checkbox" value="c++"> C++
+                          </label>
+                          <label>
+                              <input type="checkbox" value="python"> Python
+                          </label>
+                          <label>
+                              <input type="checkbox" value="javascript"> JavaScript
+                          </label>
+                          <label>
+                              <input type="checkbox" value="php"> PHP
+                          </label>
+                          <label for="toggle-skills" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                      </div>
+                  </div>
+
+                  <!-- Companies -->
+                  <div class="col-md-3">
+                      <input type="checkbox" id="toggle-companies" class="toggle-checkbox">
+                      <div class="buttonclass">
+                          <h3>Companies</h3>
+                          <label>
+                              <input type="checkbox" value="wipro"> Wipro
+                          </label>
+                          <label>
+                              <input type="checkbox" value="flipkart"> Flipkart
+                          </label>
+                          <label>
+                              <input type="checkbox" value="tcs"> TCS
+                          </label>
+                          <label>
+                              <input type="checkbox" value="infosys"> Infosys
+                          </label>
+                          <label>
+                              <input type="checkbox" value="amazon"> Amazon
+                          </label>
+                          <label>
+                              <input type="checkbox" value="google"> Google
+                          </label>
+                          <label for="toggle-companies" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                      </div>
+                  </div>
+
+                  <!-- Salary -->
+                  <div class="col-md-3">
+                      <input type="checkbox" id="toggle-salary" class="toggle-checkbox">
+                      <div class="buttonclass">
+                          <h3>Salary</h3>
+                          <label>
+                              <input type="checkbox" name="salary" value="30000"> 0-3.5LPA
+                          </label>
+                          <label>
+                              <input type="checkbox" name="salary" value="50000"> 3.5-7LPA
+                          </label>
+                          <label>
+                              <input type="checkbox" name="salary" value="70000"> 7-12LPA
+                          </label>
+                          <label>
+                              <input type="checkbox" name="salary" value="90000"> 15LPA+
+                          </label>
+                          <label for="toggle-salary" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                      </div>
+                  </div>
+
+                  <!-- Experience -->
+                  <div class="col-md-3">
+                      <input type="checkbox" id="toggle-experience" class="toggle-checkbox">
+                      <div class="buttonclass">
+                          <h3>Experience</h3>
+                          <label>
+                              <input type="checkbox" name="experience" value="junior"> Fresher
+                          </label>
+                          <label>
+                              <input type="checkbox" name="experience" value="mid"> Mid-Level
+                          </label>
+                          <label>
+                              <input type="checkbox" name="experience" value="senior"> Senior
+                          </label>
+                          <label>
+                            <input type="checkbox" name="experience" value="executive"> Executive
+                        </label>
+                          <label for="toggle-experience" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                      </div>
+                  </div>
+                  <!-- Job-Type  -->
+                  <div class="col-md-3">
+                    <input type="checkbox" id="toggle-jobtype" class="toggle-checkbox">
+                    <div class="buttonclass">
+                        <h3>Job Type</h3>
+                        <label>
+                            <input type="checkbox" name="jobtype" value="fulltime"> Full-Time
+                        </label>
+                        <label>
+                            <input type="checkbox" name="jobtype" value="parttime"> Part-Time
+                        </label>
+                        <label>
+                          <input type="checkbox" name="jobtype" value="remote"> Remote
+                      </label>
+                        <label>
+                            <input type="checkbox" name="jobtype" value="internship"> Internship
+                        </label>
+                        <label>
+                          <input type="checkbox" name="jobtype" value="contract"> Contract
+                      </label>
+                      <label>
+                        <input type="checkbox" name="jobtype" value="freelance"> Freelance
+                    </label>
+                        <label for="toggle-jobtype" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                    </div>
+                </div>
+                <!-- Educationlevel -->
+                <div class="col-md-3">
+                  <input type="checkbox" id="toggle-Educationlevel" class="toggle-checkbox">
+                  <div class="buttonclass">
+                      <h3>Education Level</h3>
+                      <label>
+                          <input type="checkbox" name="Educationlevel" value="highschool"> High School
+                      </label>
+                      <label>
+                          <input type="checkbox" name="Educationlevel" value="associatedegree"> Associate Degree
+                      </label>
+                      <label>
+                        <input type="checkbox" name="Educationlevel" value="bachelorsdegree"> Bachelor’s Degree
+                    </label>
+                      <label>
+                          <input type="checkbox" name="Educationlevel" value="mastersdegree">  Master’s Degree
+                      </label>
+                      <label>
+                        <input type="checkbox" name="Educationlevel" value="phd"> Ph.D
+                    </label>
+                      <label for="toggle-Educationlevel" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                  </div>
+              </div>
+              <!-- Job Posting Date -->
+              <div class="col-md-3">
+                <input type="checkbox" id="toggle-jobpostingdate" class="toggle-checkbox">
+                <div class="buttonclass">
+                    <h3>Job Posting Date</h3>
+                    <label>
+                        <input type="checkbox" name="jobpostingdate" value="last24"> Last 24 hours
+                    </label>
+                    <label>
+                        <input type="checkbox" name="jobpostingdate" value="last7"> Last 7 days
+                    </label>
+                    <label>
+                        <input type="checkbox" name="jobpostingdate" value="last14"> Last 14 days
+                    </label>
+                    <label>
+                      <input type="checkbox" name="jobpostingdate" value="last30">  Last 30 days
+                  </label>
+                    
+                    <label for="toggle-jobpostingdate" class="toggle-label"><i class="fa-solid fa-chevron-down"></i></label>
+                </div>
+            </div>
+
+              </div>
+              <button type="submit" class="btn btn-primary d-block mx-auto mt-4">Search</button>
+          </form>
+      </div>
+  </section>
+
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid1 p-0 m-0">
+              <div class="row g-0">
+                <div class="col-12 col-md-6 p-0 m-0 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-md">
+                  <div class="d-flex flex-column justify-content-center align-items-center h-100 p-5">
+                    <h1 class="text-white font-bold text-3xl">Practice customised mock interview with AI!</h1>
+                    <p class="text-white mt-3">Your result will be visible only to you</p>
+                    <a href="Jfpremium.html"><button class="btn btn-warning">Start for free</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 m-0 bg-gradient-to-r from-cyan-100 to-cyan-200 rounded-md">
+                  <div class="d-flex flex-column justify-content-center align-items-center h-100 p-5">
+                    <img src="images/AI (1).png" alt="AI" style="border-radius: 10px;">
+                    <div class="text-center mt-4">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            
+            <div class="container-fluid1 p-0 m-0">
+    <div class="row g-0">
+      <div class="col-12 col-md-6 p-5 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-bl-lg rounded-tl-lg">
+        <h2 class="text-white font-bold text-3xl mb-4">Need help with your resume?</h2>
+        <p class="text-white text-lg mb-4">Get experts to build your resume from scratch</p>
+        <a href="Jfpremium.html"><button class="btn btn-warning">View details</button></a>
+      </div>
+      <div class="col-12 col-md-6 p-5 bg-gradient-to-r from-cyan-400 to-cyan-300 rounded-br-lg rounded-tr-lg">
+        <img src="images/CVW.png" alt="Resume building service" style="border-radius: 10px;">
+        
+      </div>
+    </div>
+  </div>
+          </div>
+          <div class="carousel-item">
+          <div class="container-fluid1 p-0 m-0">
+            <div class="row g-0">
+              <div class="col-12 col-md-6 p-5 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-bl-lg rounded-tl-lg">
+                <h2 class="text-white font-bold text-3xl mb-4">Need career guidance?</h2>
+                <p class="text-white text-lg mb-4">Get expert advice to navigate your career path</p>
+                <a href="Jfpremium.html"><button class="btn btn-warning">View details</button></a>
+              </div>
+              <div class="col-12 col-md-6 p-5 bg-gradient-to-r from-cyan-400 to-cyan-300 rounded-br-lg rounded-tr-lg">
+                <img src="images/CG.png" alt="Resume building service" style="border-radius: 10px;">
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </div>
+
+    
+
+
+
+    <section class="art">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="images/industry reports (1).png" class="card-img-top" alt="..." style="height: 150px;width: 200px;border-radius: 10px;">
+              <div class="card-body">
+                <h5 class="card-title">Industry Reports for Developers</h5>
+                <p class="card-text">Stay ahead of the curve with our in-depth industry reports, covering the latest trends and analysis in software development.Industry reports for software developers provide crucial insights into the..  </p>
+                <a href="industryreports.html" style="text-decoration: none;"><b style="color: blue; ">Know more</b></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="images/fraud.jfif" class="card-img-top" alt="..." style="height: 150px;width: 200px;border-radius: 10px">
+              <div class="card-body">
+                <h5 class="card-title">Fraud Alert</h5>
+                <p class="card-text">At JobFinder, your safety and security are our top priorities. We want to alert you to potential fraudulent activities and scams that could affect job seekers and employers alike.</p>
+                
+                 <a href="fraud.html" style="text-decoration: none;"><b style="color: blue; ">Learn more</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Greetings from JobFinder, your reliable resource for locating the finest job openings. Our mission is to match outstanding individuals with leading companies worldwide. Our goal is to simplify and expedite the job search process by offering a platform where businesses can locate the best individuals and job seekers can find their ideal positions.<p>
+        <p>Our team of professionals is enthusiastic about hiring and career growth. With years of experience in the field, we are dedicated to providing creative solutions to meet your demands and are aware of the difficulties presented by the labor market.<p>
+          <p>We at JobFinder think that opportunities have great power. We're here to help you every step of the way, whether you're searching for a new career, a job, or to employ the perfect personnel. Come along with us to realize your professional goals.<p>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-item googlemap">
+        
+         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.02503879427263!2d72.97514572966894!3d19.18645144849792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b920aa9481a1%3A0xa48d60147b709fed!2sThane%20Railway%20Station%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1723470757508!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+      </div>
+      <div class="footer-item officeinfo">
+        <strong>Corporate Office</strong>
+        <p>
+          Job Bharat<br>XYZ<br>
+          Thane-400080<br>
+          India<br>
+          Phone: +91-9172553370,<br>
+          E-mail: <a href="mailto:jobfinder@gmail.com">jobfinder@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-item">
+        <strong>Registered Office</strong>
+        <p>
+          Job Bharat<br>XYZ<br>
+          Thane-400080<br>
+          Phone: +91-9172553370,<br>
+          India.<br>
+        </p>
+      </div>
+      <div class="footer-item">
+        <strong>Other Office</strong>
+        <p>
+          Job Bharat<br>
+          ABCD,<br>
+          Mumbai-400001<br>
+          India. <br>
+        </p>
+      </div>
+      <div class="footer-item social">
+        <span>Follow us on</span><br><br>
+        <p>
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-beat-fade fa-xl" style="color: #74C0FC;"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter fa-beat-fade fa-xl" style="color: #0c0d0d;"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-beat-fade fa-xl" style="color: #e133b2;"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Working Hours 10 AM to 6 PM, Monday to Saturday, Except Holidays
+    </div>
+    <div class="footer-bottom">
+      All rights reserved © 2000 Info Job Bharat Ltd.
+    </div>
+  </footer>
+  
+
+<div class="animate">
+  <div class="business_class"><h2>Our businesses</h2></div>
+  <div class="ani-container">
+    <div class="ani-content">
+      <div class="other_bus"><a href="#"><img src="images/JFlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+      <div class="other_bus"><a href="#"><img src="images/CvWlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+      <div class="other_bus"><a href="#"><img src="images/ITLogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+      <div class="other_bus"><a href="#"><img src="images/a-zlogo.png" alt="" style="height: 50px;width: 50px;"></a></div>
+      <div class="other_bus"><a href="#"><img src="images/JFmag.png" alt="" style="height: 50px;width: 50px;"></a></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+
+</html>

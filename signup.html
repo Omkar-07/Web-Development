@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page(OMKAR)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin: 0;
+            
+        }
+        .container {
+            background-color: rgb(212, 243, 241);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+            margin-top: 250px;
+            margin-bottom: 100px;
+           
+            box-shadow: 4px 4px 8px grey;
+        }
+        
+        .container label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: black;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .sbt {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: blue;
+            color: #fff;
+            font-size: 18px;
+        }
+        .sbt:hover {
+            background-color: rgb(43, 119, 126);
+        }
+        .gbt{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 15px;
+            font-size: 15px;
+            color: black;
+            background-color: #ffff;
+            margin-bottom: 5px;
+        }
+        .gbt:hover{
+            border: 2px solid black;
+        }
+        p{
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+                
+        <form>
+            <h1>Join Now</h1>
+            <label for="contact">Email or Phone Number:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your email or phone number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password" required>
+            <label for="password">Confirm Password:</label>
+            <input type="password" name="password" placeholder="Confirm Password" required>
+            <button type="submit" class="sbt"><a href="index.html" style="text-decoration: none;color: #fff;">Sign Up</a></button>
+            <p>By clicking Continue, you agree to JobFinder's <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.</p>
+            <b>or</b>
+            <button type="submit" class="gbt"><i class="fa-brands fa-google" style="color: red;"></i>  Continue with Google</button>
+           
+            Already on JobFinder?  <strong><a href="login.html">Sign in</a></strong>
+        </form>
+    </div>
+    
+</body>
+</html>
